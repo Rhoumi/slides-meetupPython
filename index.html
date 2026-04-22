@@ -43,8 +43,9 @@
 				<!-- SLIDE 1 -->
 
 				<section>
-					<h2>Vivre Dangereusement</h2>
+					<h2>Le live coding avec Sardine</h2>
 					<h3>Pourquoi/Comment programmer de la musique en live</h3>
+					<img src="images/sardine.gif" height="400" style="filter: invert(1);">
 				</section>
 
 				<!-- SLIDE 2 -->
@@ -101,10 +102,10 @@
 					<h1>Plan</h1>
 
 					<ul>
-						<li> c'est quoi le live coding ? Pourquoi on fait ça en fait ?
-						<li> Historique et Outils
-						<li> SARDINE
-            			<li> Demo Sardine
+						<li> C'est quoi le live coding ? Pourquoi on fait ça en fait ?
+						<li> D'où ça vient et bref aperçu d'outils
+						<li> SARDINE <marquee scrollamount="10"><code data-trim data-noescape class="plain-text"> <^[[[>< </code></marquee>
+            			<li> Demo :0
 					</ul>
 				</section>
 
@@ -120,12 +121,16 @@
 						<br>
 						<br>
 						<br>
-						<iframe width="1200" height="600" src="https://www.youtube.com/embed/LmefLTpN5Hc?si=SMSGGFG-ASoYPtrd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<h4><a href="https://www.youtube.com/watch?v=LmefLTpN5Hc">Vidéo Algorave</a></h4>
 					</section>
 
 
 					<section>
-						<h4>acte perfomatif </h4>
+						<h4>Acte performatif</h4>
+						<ul>
+							<li>Programmation en temps-réel</li>
+							<li>Improvisation</li>
+						</ul>
 						<br>
 						<br>
 						<br>
@@ -133,6 +138,11 @@
 
 					<section>
 						<h4>Pratique engagée</h4>
+						<ul>
+							<li>F/LOSS art</li>
+							<li>Transparence, Éthique</li>
+							<li>Culture hacker, lien avec les hackerspaces</li>
+						</ul>
 						<br>
 						<br>
 						<br>
@@ -142,13 +152,13 @@
 
 
 				<section>
-					<h1>Historique et bref aperçu de différents environnement </h1>
+					<h4>Historique et bref aperçu de différents environnement </h4>
 					<section>
 						<!-- Empty section -->
 					</section>
 
-										<section>
-						<br>
+					<section>
+					    <br>
 						<br>
 						<br>
 						<embed width='1200' height='600' src="https://toplap.org/"></embed>
@@ -284,9 +294,24 @@ fell out of use.
 
 				</section>
 
+				<!-- SLIDE Blague -->
+				<section>
+					<h2>Sardine</h2>
+
+					<img style="border-style: ridge; border-color: royalblue; border-width: 15px;"src="images/sardine.jpeg" height="400">
+				</section>
+
+
+				<section>
+					<h3>Raphaël Forment</h3>
+
+					<img style="border-style: ridge; border-color: darkolivegreen; border-width: 15px;" src="https://raphaelforment.fr/images/bubo_fatigue.JPG" height="400">
+				</section>
+
+
 				<!-- SLIDE DEMO -->
 				<section>
-				  <h3> Démo sur Sardine</h3>
+				  <h3> Comment Sardiner ?</h3>
 
 						<section>
 							<br>
@@ -297,11 +322,11 @@ fell out of use.
 
 				  <section>
 					<ul>
-						<li><b>Sardine Core</b> est la lib/API principale contenant différents mini langages pour la composition musicale (SPL, Ziffers, Vortex Tidal, etc) + Possibilités I/O  + Mécanisme de récursion temporel.</li>
-						<li><b>Sardine</b> est une version custom de l'interpreteur CPython. Il importe <b>Sardine</b> automatique avec la configuration utilisateur.</li>
-						<li><b>Sardine Web</b> est un éditeur textuel optionnel pour <b>Sardine</b> écrit en TypeScript fait pour les nouveaux arrivants mais utilisé uniquement par moi :)</li>
+						<li><b>Sardine</b> est la lib/API principale contenant différents mini langages pour la composition musicale (SPL, Ziffers, Vortex Tidal, etc) + Possibilités I/O  + Mécanisme de récursion temporel.</li>
+						<li>À son import <b>Sardine</b> installe proprement l'environnement de jeu avec la configuration utilisateur et mets toutes les bonnes variables et les bonnes références dans le scope de l'utilisateur du REPL.</li>
+						<li><b>Tuna</b> est un éditeur textuel optionnel pour <b>Sardine</b> écrit en Rust fait pour les nouveaux arrivants mais utilisé uniquement par Eden et Raphaël :3</li>
 						<ul>
-							<li>Autres éditeurs sont supportés: <b>VSCode Plugin</b>, Vim/Neovim, Emacs, etc...</li>
+							<li>D'autres éditeurs sont supportés: Vim/Neovim, Emacs, etc...</li>
 						</ul>
 					</ul>
 				  </section>
@@ -317,7 +342,7 @@ fell out of use.
 						<ul>
 							<li>Contrôler le piano à résonnateur magnétique d'Andrew Mc Pherson</li>
 						</ul>
-						<li><b>Ralt144MI:</b> Contrôler du matériel audio obsolète et des synthétiseurs vidéo modulaires.</li>
+						<li><b>Ralt144MI (aka notre Rémi national):</b> Contrôler du matériel audio obsolète et des synthétiseurs vidéo modulaires.</li>
 						<li><b>De manière générale:</b> Algorave, improvisation algorythmique en live, faire des bétises avec du code et des sons, et de l'impro <b>centré sur l'humain et pas la machine</b>.</li>
 
 					</ul>
@@ -330,7 +355,7 @@ fell out of use.
 					<br><br>
 				  	<ul>
 				  		<li> <b>Surfing Functions</b> / <b>Players</b> : une syntaxe simple et limitée, orientée performance en live.
-				  		<li> <b>Swimming Functions</b> : ressemble à du Python régulier, mais verbeux mais puissant. Une passerelle vers la récursion temporelle en Python.
+				  		<li> <b>Swimming Functions</b> : ressemble à du Python régulier, verbeux mais puissant. Une passerelle vers la récursion temporelle en Python.
 				  	</ul>
 				  </section>
 
@@ -391,61 +416,6 @@ fell out of use.
 				    <pre>
 				      <code data-trim data-noescape class="language-python">
       Pa * d("bd hh sn hh . hh", p=1)
-				      </code>
-				    </pre>
-						</div>
-						</div>
-				  </section>
-
-
-				  <section>
-						<div class="container">
-						<div class="col">
-						<h4>Swimming</h4>
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-							@swim
-							def pat(p=1, i=0):
-					    	D("bd hh sn hh . hh", i=i)
-					    	D("jvbass", n='C3 C4', i=i)
-					    	again(pat, p=1, i=i+1)
-				      </code>
-				    </pre>
-						</div>
-						<div class="col">
-						<h4>Players</h4>
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-      Pa * d("bd hh sn hh . hh", p=1)
-      Pb * d("jvbass", n='C3 C4', p=1)
-				      </code>
-				    </pre>
-						</div>
-						</div>
-				  </section>
-
-				  <section>
-						<div class="container">
-						<div class="col">
-						<h4>Swimming</h4>
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-							@swim
-							def pat(p=1, i=0):
-					    	D("bd!3 hh sn hh . hh", i=i)
-					    	D("jvbass jvbass:2!3",
-					    	  n='C3 C4', i=i)
-					    	again(pat, p=1, i=i+1)
-				      </code>
-				    </pre>
-						</div>
-						<div class="col">
-						<h4>Players</h4>
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-      Pa * d("bd!3 hh sn hh . hh", p=1)
-      Pb * d("jvbass jvbass:2!3",
-             n='C3 C4', p=1)
 				      </code>
 				    </pre>
 						</div>
