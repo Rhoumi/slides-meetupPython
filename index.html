@@ -21,7 +21,7 @@
 		  }
 		  blockquote {
         text-align:justify;
-        padding:10px;    
+        padding:10px;
         width: 1400px;
       }
       blockquote:before {
@@ -41,7 +41,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<!-- SLIDE 1 -->
-				
+
 				<section>
 					<h2>Vivre Dangereusement</h2>
 					<h3>Pourquoi/Comment programmer de la musique en live</h3>
@@ -93,7 +93,7 @@
 						<br>
 						<embed width='1200' height='600' src="https://www.grrrndzero.org/index.php/2773-sam-02-05-algorave"></embed>
 					</section>
-				
+
 				</section>
 
 				<!-- SLIDE 3 -->
@@ -102,25 +102,25 @@
 
 					<ul>
 						<li> c'est quoi le live coding ? Pourquoi on fait ça en fait ?
-						<li> Historique et Outils 
-						<li> SARDINE 
-            			<li> Demo Sardine 
+						<li> Historique et Outils
+						<li> SARDINE
+            			<li> Demo Sardine
 					</ul>
 				</section>
 
 				<!-- SLIDE 4 -->
 				<section>
-					<h1>Live Coding pq texiste</h1>
+					<h4>Live Coding</h4>
 					<section>
 						<!-- Empty section -->
 					</section>
 
 					<!-- UNE VIDEO DEMO ICI ???  parler de considerer la programmation comme acte performatif au meme titre qu'un musicien avec un instrument-->
 					<section>
-						<h4>video algorave ?</h4>
 						<br>
 						<br>
 						<br>
+						<iframe width="1200" height="600" src="https://www.youtube.com/embed/LmefLTpN5Hc?si=SMSGGFG-ASoYPtrd" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					</section>
 
 
@@ -284,18 +284,24 @@ fell out of use.
 
 				</section>
 
+				<!-- SLIDE DEMO -->
 				<section>
-				  <h3> Démo </h3>
+				  <h3> Démo sur Sardine</h3>
 
-
+						<section>
+							<br>
+							<br>
+							<br>
+							<embed width='1200' height='600' src="https://sardine.raphaelforment.fr"></embed>
+						</section>
 
 				  <section>
 					<ul>
-						<li><b>Sardine Core</b> is the main library/API containing small languages for musical improvisation (SPL, Ziffers, Vortex Tidal, etc) + I/O features + temporal recursion mechanism.</li>
-						<li><b>Sardine</b> is a customised version (asynchronous) of the CPython interpreter. It will import <b>Sardine</b> automatically with user config.</li>
-						<li><b>Sardine Web</b> is an optional text editor for <b>Sardine</b> written in TypeScript made for newcomers but used only by me :)</li>
+						<li><b>Sardine Core</b> est la lib/API principale contenant différents mini langages pour la composition musicale (SPL, Ziffers, Vortex Tidal, etc) + Possibilités I/O  + Mécanisme de récursion temporel.</li>
+						<li><b>Sardine</b> est une version custom de l'interpreteur CPython. Il importe <b>Sardine</b> automatique avec la configuration utilisateur.</li>
+						<li><b>Sardine Web</b> est un éditeur textuel optionnel pour <b>Sardine</b> écrit en TypeScript fait pour les nouveaux arrivants mais utilisé uniquement par moi :)</li>
 						<ul>
-							<li>Other editors are supported: <b>VSCode Plugin</b>, Vim/Neovim, Emacs, etc...</li>
+							<li>Autres éditeurs sont supportés: <b>VSCode Plugin</b>, Vim/Neovim, Emacs, etc...</li>
 						</ul>
 					</ul>
 				  </section>
@@ -303,18 +309,16 @@ fell out of use.
 				  <section>
 					<br>
 					<br>
-					<h3>What is Sardine used for?</h3>
+					<h3>Quelles utilisations pour Sardine ?</h3>
 					<ul>
-						<li><b>Claude:</b> controlling GLSL shaders and syncing them to music.</li>
-						<li><b>Ziffers:</b> developing DSLs on the top of Sardine core features.</li>
-						<li><b>Kate Sicchio:</b> Controlling robots in rhythm for contemporary choregraphy performances in NYC.</li>
-						<li><b>Jack Armitage:</b> using machine learning libraries for audiovisual performances.</li>
+						<li><b>Miika Alonen avec Ziffers:</b> Développer des DSLs par dessus les fonctionnalités de Sardine.</li>
+						<li><b>Kate Sicchio:</b> Contrôler des robots en rythme pour des performances de chorégraphie contemporaines à New York.</li>
+						<li><b>Jack Armitage:</b> Utiliser des bibliothèques de machine learning pour des performances audiovisuelles.</li>
 						<ul>
-							<li>Controlling Andrew Mc Pherson's magnetic resonator piano.</li>
+							<li>Contrôler le piano à résonnateur magnétique d'Andrew Mc Pherson</li>
 						</ul>
-						<li><b>HighHarmonics:</b> electroacoustic music using Sardine + Max/MSP.</li>
-						<li><b>Ralt144MI:</b> controlling obsolete audio hardware and modular video synthesizers.</li>
-						<li><b>Broadly speaking:</b> Algorave, live algorithmic improvisation, noodling around with code, sound, and <b>human centric</b> improv.</li>
+						<li><b>Ralt144MI:</b> Contrôler du matériel audio obsolète et des synthétiseurs vidéo modulaires.</li>
+						<li><b>De manière générale:</b> Algorave, improvisation algorythmique en live, faire des bétises avec du code et des sons, et de l'impro <b>centré sur l'humain et pas la machine</b>.</li>
 
 					</ul>
 					<p>
@@ -322,11 +326,11 @@ fell out of use.
 				  </section>
 
 				  <section>
-				  	<b>Sardine</b> code can be written in two different ways:
+				  	Le code <b>Sardine</b> peut être écrit de deux façons différentes :
 					<br><br>
 				  	<ul>
-				  		<li> <b>Surfboards</b> / <b>Players</b> : a simple, limited syntax, live oriented. 
-				  		<li> <b>Swimming Functions</b> : looks like regular Python, verbose but powerful. A gateway to temporal recursion in Python.
+				  		<li> <b>Surfing Functions</b> / <b>Players</b> : une syntaxe simple et limitée, orientée performance en live.
+				  		<li> <b>Swimming Functions</b> : ressemble à du Python régulier, mais verbeux mais puissant. Une passerelle vers la récursion temporelle en Python.
 				  	</ul>
 				  </section>
 
@@ -341,8 +345,8 @@ fell out of use.
 					    	D("bd")
 					    	again(pat, p=1, i=i+1)
 
-			    silence() # gentle
-			    panic()   # not so gentle
+			    silence() # arrêt doux
+			    panic()   # moins doux
        silence(pat)
        pat.stop()
 				      </code>
@@ -357,8 +361,8 @@ fell out of use.
 
 
 
-		    silence() # gentle
-		    panic()   # not so gentle
+		    silence() # arrêt doux
+		    panic()   # moins doux
       silence(pat)
       pat.stop()
 
@@ -428,7 +432,7 @@ fell out of use.
 				      <code data-trim data-noescape class="language-python">
 							@swim
 							def pat(p=1, i=0):
-					    	D("bd!3 hh sn hh . hh", i=i) 
+					    	D("bd!3 hh sn hh . hh", i=i)
 					    	D("jvbass jvbass:2!3",
 					    	  n='C3 C4', i=i)
 					    	again(pat, p=1, i=i+1)
@@ -448,16 +452,13 @@ fell out of use.
 						</div>
 				  </section>
 
-
 				  <section>
-				  	Using only <b>Players</b> now!
+				  	<p>Sardine utilise le moteur audio <b>SuperDirt</b>! Célébrité du live coding écrit dans Supercollider.</p>
+				  	<p>Qui a aussi été porté en JS (SuperDough) et en Rust (Doux) cette dernière année.</p>
 				  </section>
 
-
-	
-
 				  <section>
-				  	Pick the sample name you like, explore using the <b>:</b> operator.
+				  	Tout est sample ou synthétiseur sans distinction, juste préalablement défini dans le moteur.
 				    <pre>
 				      <code data-trim data-noescape class='language-plaintext'>
 ab ade ades2 ades3 ades4 alex alphabet amencutup armora arp arpy auto baa baa2 bass bass0
@@ -473,30 +474,20 @@ numbers oc off outdoor pad padlong pebbles perc peri pluck popkick print proc pr
 rave rave2 ravemono realclaps reverbkick rm rs sax sd seawolf sequential sf sheffield short
 sid sine sitar sn space speakspell speech speechless speedupdown stab stomp subroc3d sugar
 sundance tabla tabla2 tablex tacscan tech techno tink tok toys trump ul ulgab uxay v voodoo
-wind wobble world xmas yeah
+wind wobble world xmas yeah .......
 				      </code>
 				    </pre>
 				    <pre><code>Pa * d('bd:2 cp speechless:4')</code></pre>
 				  </section>
 
-
-				  <section>
-				  	You can use the good old <b>SuperDirt</b> default synthesizers too!
-				    <pre>
-				      <code data-trim data-noescape class='language-plaintext'>
-				                 superchip superpiano superkick superhat supersnare supervibe
-				      </code>
-				    </pre>
-				  </section>
-
 				   <section>
-				   	 Changing the period (<b>1 period = 1 beat</b>)
+				   	 Changer la période (<b>1 period = 1 beat</b>)
 				    <pre class="r-fit-text">
 				      <code  data-trim data-noescape class="language-python">
-Pa * d('bd cp', p=0.5) # sets period to 0.5, yields 2 notes per beat
-Pa * d('bd cp hh:2', p=0.5) # adds the hh:2 sample, meter is now felt in 3
-Pa * d('bd cp hh:2', p=0.25) # period is 0.25, 4 notes per beat, rhythm is twice as fast
-Pa * d('bd!2 cp hh:2 .', p=0.25) # adds bd repeat and a rest "." - meter is felt in 5.
+Pa * d('bd cp', p=0.5) # La période est de 0.5, 2 notes par battement
+Pa * d('bd cp hh:2', p=0.5) # ajoute le sample hh:2, le temps est maintenant ressenti en 3 battements
+Pa * d('bd cp hh:2', p=0.25) # La période est de 0.25, 4 notes par battement, le rythme est doublé
+Pa * d('bd!2 cp hh:2 .', p=0.25) # ajoute bd repeat et un rest "." - le temps est maintenant ressenti en 5 battements
 				      </code>
 				    </pre>
 				    <br>
@@ -504,7 +495,7 @@ Pa * d('bd!2 cp hh:2 .', p=0.25) # adds bd repeat and a rest "." - meter is felt
 				   	Adding keyword parameters (<b>key=value</b>)
 				    <pre>
 				      <code  data-trim data-noescape class="language-python">
-Pa * d('reverbkick east:4 yeah:2 mt', speed=1.2, shape=0.5, p=0.5) 
+Pa * d('reverbkick east:4 yeah:2 mt', speed=1.2, shape=0.5, p=0.5)
 Pa * d('reverbkick east:4 yeah:2 mt', speed='1.2 2', shape=0.5, p='0.5 0.25')
 Pa * d('reverbkick east:4 yeah:2 mt cr', speed='1.2 2.2', shape=0.7, p='0.5!2 0.25!5')
 				      </code>
@@ -513,21 +504,19 @@ Pa * d('reverbkick east:4 yeah:2 mt cr', speed='1.2 2.2', shape=0.7, p='0.5!2 0.
 
 
 				   <section>
-				   	Changing the tempo
+				   	Changer le tempo
 				    <pre>
 				      <code  data-trim data-noescape class="language-python">
-				      clock.tempo        # the current tempo
-				      bowl.clock.tempo   # same thing
-
-				      clock.tempo = 150  # tempo in BPM
+				      clock.tempo        # le tempo
+				      clock.tempo = 150  # le tempo en BPM
 				      </code>
 				    </pre>
 				    <br>
 				    <br>
-				   	Adding keyword parameters (<b>key=value</b>)
+				   	Ajouter des paramètres <b>key=value</b>
 				    <pre>
 				      <code  data-trim data-noescape class="language-python">
-Pa * d('reverbkick east:4 yeah:2 mt', speed=1.2, shape=0.5, p=0.5) 
+Pa * d('reverbkick east:4 yeah:2 mt', speed=1.2, shape=0.5, p=0.5)
 Pa * d('reverbkick east:4 yeah:2 mt', speed='1.2 2', shape=0.5, p='0.5 0.25')
 Pa * d('reverbkick east:4 yeah:2 mt cr', speed='1.2 2.2', shape=0.7, p='0.5!2 0.25!5')
 				      </code>
@@ -537,7 +526,7 @@ Pa * d('reverbkick east:4 yeah:2 mt cr', speed='1.2 2.2', shape=0.7, p='0.5!2 0.
 					<section>
 						<br>
 						<br>
-						Some of the basic handlers you can use with Sardine:
+						Voici les senders disponibles avec Sardine:
 						<br>
 						<br>
 				   <section data-markdown style="font-size:24pt;">
@@ -572,51 +561,15 @@ Pa * d('reverbkick east:4 yeah:2 mt cr', speed='1.2 2.2', shape=0.7, p='0.5!2 0.
 				      </code>
 				    </pre>
 				    <aside class="notes">
-				      The pipe operator allows to flip a coin to chose between C and E.<br>
-				      The tilde operator creates a ramp between two extremal values (here it results in a chromatic ascent from C to G).<br>
-				      The bang/exclamation point operator instructs to repeat the value it is applied to a certain number of times.<br>
-				      The colon and square brackets allow to generate a range of evenly-spaced values, here cutoff values for a low-pass filter going from 100 to 1000 by steps of 100 (100, 200, 300 etc).
+				      Le pipe permet de lancer une pièce à pile ou face pour choisir entre C et E.<br>
+				      Le tilde crée une rampe entre deux valeurs extrêmes (ici, un chromatique ascension de C à G).<br>
+				      Le point d'exclamation indique de répéter la valeur sur laquelle il est appliqué un certain nombre de fois.<br>
+				      La virgule et les crochets permettent de générer une plage de valeurs équiréparties, ici des valeurs de coupure pour un filtre passe-bas allant de 100 à 1000 par pas de 100 (100, 200, 300 etc).
 				    </aside>
-				  </section>				  
-
-				  <section>
-				  	<br>
-				  <code>r</code> = incrementation rate
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-				      Pa * d('amencutup:[0:20]', p=0.25, leg=.5, r=0.25)
-				      </code>
-				    </pre>
-				  <code>d</code> = divisor, skips events when <code>i % d == 0</code> 
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-				      Pa * d('amencutup:[0:20]', p=0.25, leg=.5, r=0.25, d=3)
-				      </code>
-				    </pre>
-				  <code>i</code> = increment step
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-				      Pa * d('amencutup:[0:20]', p=0.25, leg=.5, r=0.25, d=3, i=2)
-				      </code>
-				    </pre>
-				  <code>l</code> = incrementation limit
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-				      Pa * d('amencutup:[0:20]', p=0.25, l=2, leg=.5, r=0.25)
-				      </code>
-				    </pre>
-				  <code>until</code> = repeat <code>n</code> times and stop!
-				    <pre>
-				      <code data-trim data-noescape class="language-python">
-				      Pa * d('amencutup:[0:20]', p=0.25, leg=.5, until=8)
-				      </code>
-				    </pre>
-
-
 				  </section>
 
 				  <section>
-					<h2>Learning more</h2>
+					<h2>Plus loin :</h2>
 				  </section>
 
 				  <section>
@@ -638,7 +591,7 @@ def baba(p=0.5, i=0):
 				  </section>
 
 				  <section>
-				  	<h3>Too lazy to write code! Time to dance!</h3>
+				  	<h3>Paresseux à écrire du code: les générateurs de rythmes euclidiens !</h3>
 				    <pre>
 				      <code data-trim data-noescape class="language-python">
 				      Pa * d('(eu kick 5 8)', p=.5)
@@ -651,29 +604,22 @@ def baba(p=0.5, i=0):
 				  </section>
 
 				  <section>
-				  	<h3><b>More advanced Sardine topics:</b></h3>
+				  	<h3><b>D'autres sujets plus poussés dans Sardine:</b></h3>
 				  	<ul>
-				  		<li>Global Variables in the pattern language</li>
-				  		<li>The <b>Ziffers</b> Patterning Language</li>
-				  		<li>Low Frequency Oscillators for patterns</li>
-				  		<li>The Pattern Object for patterning everything</li>
-				  		<li>Different clocks: syncing using Link</li>
-				  		<li>The <em>not so complete</em> Function Library</li>
+				  		<li>Les Variables Globales dans le langage de pattern</li>
+				  		<li><b>Ziffers</b> le langage de pattern</li>
+				  		<li>Les Oscillateurs à basse fréquences pour du contrôle de paramètres</li>
+				  		<li>L'objet Pattern pour patterner tout</li>
+				  		<li>Plusieurs horloges : sync avec Link</li>
+				  		<li>La librairie de fonctions</li>
 				  		<li>Presets, MIDIInstruments, MIDIControllers</li>
-				  		<li>Sleeping and oversleeping mechanism</li>
-				  		<li>Interacting with the SuperCollider engine</li>
+				  		<li>Les interactions avec SuperCollider</li>
 				  	</ul>
 				  </section>
 
 
 				  <section>
-				  	<h3><b>Join us, Contribute, Have fun!</b></h3>
-				  	<ul>
-							<li>Sardine is only <b>one year</b> old. This is a young projet, with <b>many improvements</b> yet to come!</li>
-							<li>Sardine is only developed by one PhD Student + rather passionate/desperate people.</li>
-							<li>Sardine can help you to tap into the vast ecosystem of Python libraries for other concerns than live coding.</li>
-							<li>Sardine is a funny name. You want your name on the contributors list.</li>
-				  	</ul>
+				  	<h3><b>hésitez pas à tester Sardine, contribuer et surtout vous amuser!</b></h3>
 				  </section>
 
 			</div>
